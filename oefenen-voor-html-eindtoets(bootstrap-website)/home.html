@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>bol.com Bootstrap Replica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: white !important;
+      letter-spacing: -1px;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar-brand span {
+      font-size: 1.4rem;
+      vertical-align: top;
+    }
+
+    .promo-banner {
+      background-color: #e9f5ff;
+    }
+
+    .deal-card img,
+    .deals-big img {
+      width: 100%;
+      border-radius: 0.25rem;
+    }
+
+    .deal-card {
+      font-size: 0.85rem;
+    }
+
+    .deal-card small {
+      color: #555;
+    }
+
+    .deals-big {
+      max-width: 320px;
+    }
+
+    .color-pink-bg {
+      background-color: #ff80d6;
+    }
+
+    .color-green-bg {
+      background-color: #b2f2bb;
+    }
+
+    .color-pink-margin {
+      border: 1px solid #f95b7b;
+    }
+
+    .footer-black {
+      background-color: #1e2328;
+      color: #ddd;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .form-control.is-invalid {
+      background-position: right calc(0.375em + 0.1875rem) center;
+      background-repeat: no-repeat;
+      border-color: #dc3545;
+      padding-right: calc(1.5em + 0.75rem);
+      background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+    }
+
+    .invalid-feedback {
+      display: block;
+      font-size: 0.75rem;
+    }
+
+    .form-check.invalid-feedback {
+      margin-left: 1.25rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        bol.com<span style="font-size: .8rem;">🛒</span>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1) brightness(2);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Beeld & geluid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Telefonie en Navigatie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Eindtoets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Alert -->
+  <div class="alert alert-info mb-0 text-center" role="alert">
+    Bol bol bol bol.com!
+  </div>
+
+  <!-- Promo Section -->
+  <section class="promo-banner container my-3 p-3 rounded d-flex flex-wrap align-items-center">
+    <div class="flex-shrink-0" style="width: 150px;">
+      <img src="https://cdn.bol.com/static/img/294x294/apple-iphone-14-pro-yellow.png" alt="iPhone 14 pro" class="img-fluid rounded" />
+    </div>
+    <div class="ps-3 flex-grow-1">
+      <h5 class="mb-1"><strong>Alleen vandaag geldig!</strong></h5>
+      <p class="mb-0 fw-semibold">De iPhone 14 pro.</p>
+      <small class="d-block mb-2 text-muted" style="font-size: 0.85rem;">
+        In meerdere kleuren verkrijgbaar, batterijduur van 1 uur, kan niet tegen water. Gaat 1 jaar mee! Oplader niet meegeleverd!
+      </small>
+      <div class="fs-5 fw-bold mb-2">€7900,-</div>
+      <a href="#" class="btn btn-primary btn-sm">Bekijk hier de deal!</a>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section class="container my-4">
+    <h5 class="mb-3">Deals</h5>
+    <div class="row g-3">
+
+      <!-- Deal Cards small -->
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card deal-card p-2">
+          <img src="https://cdn.bol.com/static/img/178x178/people-with-book.png" alt="Books MediaMarkt" />
+          <div class="mt-2">De beste boeken bij MediaMarkt!</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card deal-card p-2">
+          <img src="https://cdn.bol.com/static/img/178x178/yellow-face-tech.png" alt="Elektro deals" />
+          <div class="mt-2">De beste elektronica deals van de week!</div>
+        </div>
+      </div>
+
+      <!-- Deal Center Big -->
+      <div class="col-12 col-sm-4 col-md-4 d-flex justify-content-center">
+        <div class="deals-big text-center p-2">
+          <img src="https://cdn.bol.com/static/img/320x228/hogwarts-legacy.png" alt="Hogwarts Legacy" />
+          <div class="mt-2" style="font-size: 0.85rem;">Dit was een leuke game!!</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card deal-card p-2">
+          <img src="https://cdn.bol.com/static/img/178x178/monkey-toys.png" alt="Speelgoed deals" />
+          <div class="mt-2">De beste speelgoed deals van de week!</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="card deal-card p-2">
+          <img src="https://cdn.bol.com/static/img/178x178/red-controller.png" alt="Game deals" />
+          <div class="mt-2">De beste game deals van de week!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colorful Promo Boxes -->
+  <section class="container mb-4">
+    <div class="row g-3">
+      <div class="col-12 col-md-4">
+        <div class="p-3 color-pink-bg text-dark rounded">
+          <img src="https://cdn.bol.com/static/img/118x90/davitamon-promo.png" alt="Davitamon" class="mb-2" />
+          <h6 class="mb-1">Davitamon</h6>
+          <p style="font-size: 0.8rem;">Altijd meerstuksvoordeel bij Bol.com op Davitamon voedingssupplementen & vitamines. Hoe meer stuks je koopt, hoe mee korting je krijgt!</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="p-3 color-pink-bg text-dark rounded">
+          <div class="mb-1 d-flex justify-content-between align-items-center">
+            <span>Tot 50% op je haarverzorging</span>
+            <small class="badge bg-danger">50%</small>
+          </div>
+          <p style="font-size: 0.8rem;">Scoor nu tot 50% korting op ons haarverzorging assortiment.</p>
+          <img src="https://cdn.bol.com/static/img/118x90/haircare-promo.png" alt="Haarverzorging" />
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="p-3 color-green-bg text-dark rounded">
+          <div class="mb-1 d-flex justify-content-between align-items-center">
+            <span>Vaderdag</span>
+            <small class="badge bg-danger">Scheer geprijsd</small>
+          </div>
+          <p style="font-size: 0.8rem;">Verwen je vader of een ander met een heerlijk verzorgingsproduct van een luxe merk, zoals Clinique, Hugo Boss of Biotherm.</p>
+          <img src="https://cdn.bol.com/static/img/118x90/vaderdag.png" alt="Vaderdag" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blue Fitness Deal Banner -->
+  <section class="container mb-5 p-3 rounded" style="background: #8acdff;">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-start">
+        <h4 class="fw-bold text-primary">Alles om weer fit te worden</h4>
+        <a href="#" class="btn btn-primary btn-sm mt-2">Bekijk nu alle deals</a>
+      </div>
+      <div class="col-md-4 text-center mt-3 mt-md-0">
+        <img src="https://cdn.bol.com/static/img/150x150/fitness-promo.png" alt="Fitness" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <footer class="footer-black">
+    <div class="container">
+      <h5 class="mb-3 text-white">Contact</h5>
+      <form novalidate>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <input type="text" class="form-control is-invalid" placeholder="Vul voornaam in." required />
+            <div class="invalid-feedback">Vul voornaam in.</div>
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control is-invalid" placeholder="Vul achternaam in." required />
+            <div class="invalid-feedback">Vul achternaam in.</div>
+          </div>
+          <div class="col-md-4">
+            <input type="tel" class="form-control is-invalid" placeholder="Vul Telefoonnummer in." required pattern="[0-9+ ]+" />
+            <div class="invalid-feedback">Vul Telefoonnummer in.</div>
+          </div>
+
+          <div class="col-md-4">
+            <input type="text" class="form-control is-invalid" placeholder="Vul stad in." required />
+            <div class="invalid-feedback">Vul stad in.</div>
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control is-invalid" placeholder="Vul je postcode in." required />
+            <div class="invalid-feedback">Vul je postcode in.</div>
+          </div>
+
+          <div class="col-12">
+            <input type="email" class="form-control is-invalid" placeholder="Vul een geldig email adres in." required />
+            <div class="invalid-feedback">Vul een geldig email adres in.</div>
+          </div>
+
+          <div class="col-12">
+            <textarea name="msg" rows="3" class="form-control is-invalid" placeholder="Uw bericht" required></textarea>
+            <div class="invalid-feedback">Typ een bericht in!</div>
+          </div>
+
+          <div class="col-12 form-check">
+            <input type="checkbox" class="form-check-input is-invalid" id="termsCheck" required />
+            <label class="form-check-label text-white" for="termsCheck">Ik ga akkoord met de algemene voorwaarde.</label>
+            <div class="invalid-feedback">Je moet akkoord gaan met de algemene voorwaarden!</div>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-sm">Verzend formulier</button>
+          </div>
+        </div>
+      </form>
+      <div class="pt-3 mt-3 border-top">
+        <p class="mb-1"><small><i class="bi bi-instagram"></i> Stuur je bericht via instagram Stuur ons een privé bericht via instagram</small></p>
+        <p class="mb-1"><small>Ook kunnen we je verder helpen via de chat.</small></p>
+        <p class="mb-0"><small>ma-vr: 08:00-22:00, za: 09:00-20:00, zo: 10:00-19:00</small></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
